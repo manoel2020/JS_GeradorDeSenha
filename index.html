@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="Gerador de senha, gerador password" />
+    <title>Gerador De Senha</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="logo" src="./assets/logo.png" alt="Gerador de Senha logo" />
+    <main class="container-input">
+      <span>Tamanho <span id="valor"></span> caracteres </span>
+      <input
+        type="range"
+        class="slider"
+        name="slider"
+        id="slider"
+        min="5"
+        max="25"
+        value="15"
+      />
+      <button id="button" class="button-cta">Gerar Senha</button>
+    </main>
+    <div id="container-password" class="container-password hide">
+      <span class="title">Sua Senha Gerada foi:</span>
+      <span id="password" class="password"></span>
+      <span class="tooltip"></span>
+    </div>
+    <div class="copy">
+      <p>
+        <a href="https://www.youtube.com/watch?v=i6t2jaRxos4" target="_blank"
+          >Direito do Fonte</a
+        >
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
